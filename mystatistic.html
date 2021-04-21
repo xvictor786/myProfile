@@ -1,0 +1,107 @@
+<html>
+<head>
+<style>
+
+body{background-color:#ABFADA;}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+  border-right:1px solid #bbb;
+}
+
+li:last-child {
+  border-right: none;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #4CAF50;
+}
+
+.gridy{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: 
+    "a a"
+    "b c";
+  margin: 2rem 0;
+}
+
+.gridy main{
+  grid-area: a;
+  background-color: bisque;
+  padding: 1rem;
+}
+.gridy section:first-of-type{
+  grid-area: b;
+  background-color: lightskyblue;
+  padding: 1rem;
+}
+.gridy section:last-of-type{
+  grid-area: c;
+  background-color: #bada55;
+  padding: 1rem;
+}
+
+</style>
+
+</head>
+
+<body>
+
+
+
+<ul>
+  <li><a class="active" href="index.html">Home</a></li>
+  <li><a href="resume.html">Profile</a></li>
+</ul>
+<h1 style="text-align:center">My Statistic</h1>
+
+           <div class="gridy">
+           <main><h2 style="text-align:center">Stage Experience</h2></main>
+
+            <section><p><strong>Night Electronic Sdn.Bhd</strong></p>
+            <p>Ampang cahaya, Kuala Lumpur</p>
+            <p>Technician</p></section>
+            
+            <section><p><strong>HEITECH PADU BERHAD</strong></p>
+            <p>HeiTech Village,USJ 1, Subang Jaya</p>
+            <p>System Analysis</p></section>
+            </div>  
+            
+            <div class="gridy">
+           <main><h2 style="text-align:center">Education</h2></main>
+
+            <section><p><strong>Kolej Komuniti Kuala Langat</strong></p>
+            <p>Graduated in 2017  CGPA: 3.60</p>
+            <p>Certificate of Computer Software Application</p></section>
+            
+            <section><p><strong>Politeknik Sultan Idris Shah</strong></p>
+            <p>Graduated in 2019  CGPA: 3.19</p>
+            <p>Diploma Digital Technology</p></section>
+            </div> 
+                
+</body>
+
+
+</html>
+
